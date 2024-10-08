@@ -1,4 +1,4 @@
-Library Management System
+# Library Management System
 
 This project implements a fullstack application for a library management system using FastAPI. It features role-based access control for Librarians and Members, secured with JWT authentication. The system enables librarians to manage books and inventory, while members can borrow and return books.
 
@@ -160,9 +160,9 @@ Borrowed Books Table:
 ### Output/Frontend/Working
 
 ![image](https://github.com/user-attachments/assets/06ad54bf-7c27-4b0f-a534-725c3e793e37)
-Sign Up
+### Sign Up
 ![image](https://github.com/user-attachments/assets/6c88b638-cf33-4b9f-8c54-46fcd44ac511)
-Sign In
+### Sign In
 ![image](https://github.com/user-attachments/assets/beb5789d-3f77-406e-87a9-f0d27e6e3fb2)
 
 ### Librarian Dashboard
@@ -172,9 +172,9 @@ Sign In
 ![image](https://github.com/user-attachments/assets/aaa16fa3-7fbf-4086-98be-c3da11af1fa3)
 ![image](https://github.com/user-attachments/assets/fd164a9c-8f75-4661-a744-b011f27d4919)
 ![image](https://github.com/user-attachments/assets/0b512120-8897-445a-914f-19b6e1847423)
-Delete
+### Delete
 ![image](https://github.com/user-attachments/assets/7cdbd2e5-d2a1-453a-a71f-2b11ab83cf6f)
-Manage Members (Add/Delete)
+### Manage Members (Add/Delete)
 ![image](https://github.com/user-attachments/assets/b03eb60a-2157-4ebb-9ca8-d68656fcd3e1)
 ![image](https://github.com/user-attachments/assets/a2a87941-a0a4-4d71-81b3-4f951cbdf245)
 ### Borrow/Return (Based on Members)
