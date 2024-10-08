@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Librarian Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Librarian Dashboard</h1>
+      </header>
+      <nav>
+        <ul class="nav-list">
+          <li>
+            <button id="books-btn" class="btn btn-blue">Manage Books</button>
+          </li>
+          <li>
+            <button id="members-btn" class="btn btn-green">
+              Manage Members
+            </button>
+          </li>
+          <li>
+            <button id="history-btn" class="btn btn-yellow">
+              Issue/Return History
+            </button>
+          </li>
+          <li>
+            <button id="deleted-members-btn" class="btn btn-red">
+              Deleted Members
+            </button>
+          </li>
+          <li><button id="logout-btn" class="btn btn-gray">Logout</button></li>
+        </ul>
+      </nav>
+      <main>
+        <div id="content" class="content">
+          <p>
+            Welcome to the Librarian Dashboard. Select an option from the menu
+            above to get started.
+          </p>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="librarian.js"></script>
+  </body>
+</html>

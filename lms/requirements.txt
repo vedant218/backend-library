@@ -1,0 +1,16 @@
+bcrypt
+cryptography
+fastapi
+python-jose
+python-multipart
+SQLAlchemy
+uvicorn
+passlib
+pydantic
+psycopg2
+python-dotenv
+python-decouple
+python-dateutil
+passlib
+mysql-connector-python
+python-decouple

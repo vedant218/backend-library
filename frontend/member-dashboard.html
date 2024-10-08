@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Member Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Member Dashboard</h1>
+      </header>
+      <nav>
+        <ul class="nav-list">
+          <li>
+            <button id="books-btn" class="btn btn-blue">Browse Books</button>
+          </li>
+          <li>
+            <button id="history-btn" class="btn btn-yellow">
+              Borrowing History
+            </button>
+          </li>
+          <li>
+            <button id="delete-account-btn" class="btn btn-red">
+              Delete Account
+            </button>
+          </li>
+          <li><button id="logout-btn" class="btn btn-gray">Logout</button></li>
+        </ul>
+      </nav>
+      <main>
+        <div id="content" class="content">
+          <p>
+            Welcome to the Member Dashboard. Select an option from the menu
+            above to get started.
+          </p>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="member.js"></script>
+  </body>
+</html>
