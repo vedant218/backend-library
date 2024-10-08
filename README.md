@@ -138,25 +138,6 @@ The system utilizes the following tables:
 3. Borrowed Books Table: Tracks book borrowing activities.
 4. Activity Log Table: Records all system activities.
 
-### Sample Table Structures
-
-Users Table:
-| id | username | password | role | created_at |
-|----|------------|-----------|-----------|---------------------|
-| 1 | librarian1 | hashed_pw | LIBRARIAN | 2024-01-01 00:00:00 |
-| 2 | member1 | hashed_pw | MEMBER | 2024-01-02 00:00:00 |
-
-Books Table:
-| id | title | author | status |
-|----|---------------|------------|-----------|
-| 1 | Python 101 | John Doe | AVAILABLE |
-| 2 | FastAPI Guide | Jane Smith | BORROWED |
-
-Borrowed Books Table:
-| id | book_id | user_id | borrowed_at | due_date | returned_at |
-|----|---------|---------|----------------------|----------------------|----------------------|
-| 1 | 2 | 2 | 2024-01-05 10:00:00 | 2024-01-19 10:00:00 | 2024-01-10 14:00:00 |
-
 ### Output/Frontend/Working
 
 ![image](https://github.com/user-attachments/assets/06ad54bf-7c27-4b0f-a534-725c3e793e37)
