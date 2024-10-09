@@ -118,6 +118,7 @@ Remove a member from the system.
 ![APIs](https://github.com/user-attachments/assets/fbbd4d33-dd70-45f6-ba5c-357716267ee0)
 
 ## Database Structure
+![image](https://github.com/user-attachments/assets/8f82362c-f835-451a-b2d5-3335128af62c)
 
 The system utilizes the following tables:
 
@@ -125,6 +126,7 @@ The system utilizes the following tables:
 2. Books Table: Contains information about all books.
 3. Borrowed Books Table: Tracks book borrowing activities.
 4. Activity Log Table: Records all system activities.
+   
 
 ### Output/Frontend/Working
 
