@@ -1,5 +1,5 @@
 // Member page logic
-const API_URL = 'https://backend-library-71vo.onrender.com/'; 
+const API_URL = 'https://backend-library-71vo.onrender.com'; 
 
 document.addEventListener('DOMContentLoaded', () => {
     const token = localStorage.getItem('token');
