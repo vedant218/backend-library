@@ -2,7 +2,7 @@ import mysql.connector
 from passlib.context import CryptContext
 
 # Connection with MySQL Database
-db = mysql.connector.connect(host = "localhost", user="root", password="vedant465")
+db = mysql.connector.connect(host = "library-management-iitb.c102cka22n1p.us-east-1.rds.amazonaws.com", user="admin", password="Dragonkiller465")
 cur = db.cursor()
 
 # Create database if doesn't exists
@@ -10,7 +10,7 @@ cur.execute("CREATE DATABASE IF NOT EXISTS library_ms")
 cur.close()
 
 # Connect to the newly created databas
-db = mysql.connector.connect(host = "localhost", user="root", password="vedant465", database="library_ms")
+db = mysql.connector.connect(host = "library-management-iitb.c102cka22n1p.us-east-1.rds.amazonaws.com", user="admin", password="Dragonkiller465", database="library_ms")
 cur = db.cursor()
 
 # Create table "users"
