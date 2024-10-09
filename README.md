@@ -101,6 +101,11 @@ Add a new user as a member.
 
 Remove a member from the system.
 
+#### GET "/deleted-members"
+
+Description: To get a list of all the deleted members in the library.
+
+
 ### Member Routes
 
 #### GET "/books"
@@ -118,11 +123,7 @@ Remove a member from the system.
 #### GET "/borrowed-books"
 
 - Description: To get a list of borrowed books history in the library.
-- 
-- #### GET "/deleted-members"
-
-- Description: To get a list of all the deleted members in the library.
-
+  
 ![APIs](https://github.com/user-attachments/assets/fbbd4d33-dd70-45f6-ba5c-357716267ee0)
 
 ## Database Structure
