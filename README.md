@@ -1,6 +1,6 @@
 # Library Management System
 
-This project implements a fullstack application for a library management system using FastAPI. It features role-based access control for Librarians and Members, secured with JWT authentication. The system enables librarians to manage books and inventory, while members can borrow and return books.
+This project implements a fullstack application for a library management system using FastAPI. It features role-based access control for Librarians and Members, secured with JWT authentication. The system enables librarians to manage books and users, while members can borrow and return books.
 
 ## Technology Stack
 
