@@ -10,7 +10,7 @@ This project implements a fullstack application for a library management system 
 - **Database:** MySQL
 - **API Documentation:** Auto-generated FastAPI Swagger UI
 - **frontend:** HTML, CSS, JavaScript
-- **Hosting:** Netlify(Frontend). Vercel(Backend) [Serverless functions in vercel not working. Need to use GCP or AWS for backend and database hosting]
+- **Hosting:** Netlify(Frontend) : https://famous-kataifi-e3edcb.netlify.app/. Vercel(Backend) [Serverless functions in vercel and render not working. Need to use GCP or AWS for database hosting]
 ## Setup Instruction
 
 Clone the Repository:
