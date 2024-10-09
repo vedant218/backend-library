@@ -1,5 +1,5 @@
 // Authentication logic
-const API_URL = 'http://127.0.0.1:8000'; // Replace with your actual API URL when available
+const API_URL = 'https://backend-library-71vo.onrender.com/'; 
 
 const signupForm = document.getElementById('signup');
 const signinForm = document.getElementById('signin');
