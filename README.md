@@ -1,6 +1,6 @@
-# LMS - Library Management System
+# Library Management System
 
-This project implements a robust backend for a library management system using FastAPI. It features role-based access control for Librarians and Members, secured with JWT authentication. The system enables librarians to manage books and inventory, while members can borrow and return books.
+This project implements a fullstack application for a library management system using FastAPI. It features role-based access control for Librarians and Members, secured with JWT authentication. The system enables librarians to manage books and inventory, while members can borrow and return books.
 
 ## Technology Stack
 
@@ -34,7 +34,7 @@ Clone the Repository:
 2. Navigate to the project directory:
 
    ```bash
-   cd <project-directory>
+   cd lms
    ```
 
 3. Set up a virtual environment (recommended):
@@ -127,6 +127,8 @@ Remove a member from the system.
 
 - Description: To return a book from the library.
 
+![APIs](https://github.com/user-attachments/assets/fbbd4d33-dd70-45f6-ba5c-357716267ee0)
+
 ## Database Structure
 
 The system utilizes the following tables:
@@ -136,21 +138,36 @@ The system utilizes the following tables:
 3. Borrowed Books Table: Tracks book borrowing activities.
 4. Activity Log Table: Records all system activities.
 
-### Sample Table Structures
+### Output/Frontend/Working
 
-Users Table:
-| id | username | password | role | created_at |
-|----|------------|-----------|-----------|---------------------|
-| 1 | librarian1 | hashed_pw | LIBRARIAN | 2024-01-01 00:00:00 |
-| 2 | member1 | hashed_pw | MEMBER | 2024-01-02 00:00:00 |
+![image](https://github.com/user-attachments/assets/06ad54bf-7c27-4b0f-a534-725c3e793e37)
+### Sign Up
+![image](https://github.com/user-attachments/assets/6c88b638-cf33-4b9f-8c54-46fcd44ac511)
+### Sign In
+![image](https://github.com/user-attachments/assets/beb5789d-3f77-406e-87a9-f0d27e6e3fb2)
 
-Books Table:
-| id | title | author | status |
-|----|---------------|------------|-----------|
-| 1 | Python 101 | John Doe | AVAILABLE |
-| 2 | FastAPI Guide | Jane Smith | BORROWED |
+### Librarian Dashboard
+![image](https://github.com/user-attachments/assets/f078372a-c635-41df-b515-7d7a45cba97f)
+![image](https://github.com/user-attachments/assets/208f69b7-d5f8-408d-967b-e4a54672a73b)
+![image](https://github.com/user-attachments/assets/4a5e20d3-b342-475d-b236-092d0b9e3e01)
+![image](https://github.com/user-attachments/assets/aaa16fa3-7fbf-4086-98be-c3da11af1fa3)
+![image](https://github.com/user-attachments/assets/fd164a9c-8f75-4661-a744-b011f27d4919)
+![image](https://github.com/user-attachments/assets/0b512120-8897-445a-914f-19b6e1847423)
+### Delete
+![image](https://github.com/user-attachments/assets/7cdbd2e5-d2a1-453a-a71f-2b11ab83cf6f)
+### Manage Members (Add/Delete)
+![image](https://github.com/user-attachments/assets/b03eb60a-2157-4ebb-9ca8-d68656fcd3e1)
+![image](https://github.com/user-attachments/assets/a2a87941-a0a4-4d71-81b3-4f951cbdf245)
+### Borrow/Return (Based on Members)
+![image](https://github.com/user-attachments/assets/2c7d4b7a-e1af-4645-9184-157016491bd9)
+![image](https://github.com/user-attachments/assets/2fc5ac36-d300-479b-94d9-6a26afcecd16)
 
-Borrowed Books Table:
-| id | book_id | user_id | borrowed_at | due_date | returned_at |
-|----|---------|---------|----------------------|----------------------|----------------------|
-| 1 | 2 | 2 | 2024-01-05 10:00:00 | 2024-01-19 10:00:00 | 2024-01-10 14:00:00 |
+### Member Dashboard
+### books available
+![image](https://github.com/user-attachments/assets/13c76166-40d6-4e1b-81f9-8dca2666ec39)
+### Borrow history + not returned books
+![image](https://github.com/user-attachments/assets/e42960ec-09bd-4143-b550-efd086e91b9a)
+
+
+
+
