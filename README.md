@@ -10,19 +10,7 @@ This project implements a fullstack application for a library management system 
 - **Database:** MySQL
 - **API Documentation:** Auto-generated FastAPI Swagger UI
 - **frontend:** HTML, CSS, JavaScript
-
-## Getting Started
-
-**Framework:** FastAPI
-
-**Authentication:** JWT (JSON Web Tokens)
-
-**Database:** MySQL Database
-
-**Environment Management:** Python venv
-
-**API Documentation:** FastAPI Swagger UI (auto-generated)
-
+- **Hosting:** Netlify(Frontend). Vercel(Backend) [Serverless functions in vercel not working. Need to use GCP or AWS for backend and database hosting]
 ## Setup Instruction
 
 Clone the Repository:
@@ -113,6 +101,11 @@ Add a new user as a member.
 
 Remove a member from the system.
 
+#### GET "/deleted-members"
+
+Description: To get a list of all the deleted members in the library.
+
+
 ### Member Routes
 
 #### GET "/books"
@@ -127,9 +120,14 @@ Remove a member from the system.
 
 - Description: To return a book from the library.
 
+#### GET "/borrowed-books"
+
+- Description: To get a list of borrowed books history in the library.
+  
 ![APIs](https://github.com/user-attachments/assets/fbbd4d33-dd70-45f6-ba5c-357716267ee0)
 
 ## Database Structure
+![image](https://github.com/user-attachments/assets/8f82362c-f835-451a-b2d5-3335128af62c)
 
 The system utilizes the following tables:
 
@@ -137,6 +135,7 @@ The system utilizes the following tables:
 2. Books Table: Contains information about all books.
 3. Borrowed Books Table: Tracks book borrowing activities.
 4. Activity Log Table: Records all system activities.
+   
 
 ### Output/Frontend/Working
 
