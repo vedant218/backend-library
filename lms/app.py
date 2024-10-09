@@ -11,7 +11,7 @@ app = FastAPI(
 # Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://famous-kataifi-e3edcb.netlify.app/","http://127.0.0.1:5501" ,],  # Add your frontend URL
+    allow_origins=["https://famous-kataifi-e3edcb.netlify.app","http://127.0.0.1:5501" ,],  # Add your frontend URL
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
