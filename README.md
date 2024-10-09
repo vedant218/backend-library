@@ -7,10 +7,11 @@ This project implements a fullstack application for a library management system 
 - **Language:** Python
 - **Framework:** FastAPI
 - **Authentication:** JWT (JSON Web Tokens)
-- **Database:** MySQL
+- **Database:** MySQL, AWS RDS
 - **API Documentation:** Auto-generated FastAPI Swagger UI
 - **frontend:** HTML, CSS, JavaScript
 - **Hosting:** Netlify(Frontend) : https://famous-kataifi-e3edcb.netlify.app/. Vercel(Backend) [Serverless functions in vercel and render not working. Need to use GCP or AWS for database hosting]
+- Update: Backend Hosted on https://backend-library-71vo.onrender.com/ , Database hosted on AWS
 ## Setup Instruction
 
 Clone the Repository:
