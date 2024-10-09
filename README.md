@@ -11,18 +11,6 @@ This project implements a fullstack application for a library management system 
 - **API Documentation:** Auto-generated FastAPI Swagger UI
 - **frontend:** HTML, CSS, JavaScript
 
-## Getting Started
-
-**Framework:** FastAPI
-
-**Authentication:** JWT (JSON Web Tokens)
-
-**Database:** MySQL Database
-
-**Environment Management:** Python venv
-
-**API Documentation:** FastAPI Swagger UI (auto-generated)
-
 ## Setup Instruction
 
 Clone the Repository:
