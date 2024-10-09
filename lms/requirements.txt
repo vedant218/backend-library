@@ -7,7 +7,7 @@ SQLAlchemy
 uvicorn
 passlib
 pydantic
-psycopg2
+psycopg2-binary
 python-dotenv
 python-decouple
 python-dateutil

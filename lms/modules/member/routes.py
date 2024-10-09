@@ -1,11 +1,3 @@
-'''
-As a Member
-1. I can view, borrow, and return available Books
-2. Once a book is borrowed, its status will change to BORROWED
-3. Once a book is returned, its status will change to AVAILABLE
-4. I can delete my own account
-
-'''
 
 from fastapi import APIRouter, Depends
 from fastapi.exceptions import HTTPException

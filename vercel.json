@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "lms/app.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "lms/app.py"
+    }
+  ]
+}

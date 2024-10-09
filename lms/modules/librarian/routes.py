@@ -1,10 +1,3 @@
-'''
-As a LIBRARIAN:-
-1. I can Add, Update and Remove books from the database
-2. I can Add, Update, View and Remove members from the database
-
-'''
-
 from fastapi import APIRouter, Depends
 from fastapi.exceptions import HTTPException
 from pydantic import BaseModel
@@ -13,7 +6,6 @@ from modules.auth.jwt_handler import get_current_user
 
 router = APIRouter()
 
-# ************************************** Manage of Books *****************************************
 
 class Book(BaseModel):
     title: str
@@ -73,8 +65,6 @@ async def delete_book(book_id: int, current_user: dict = Depends(get_current_use
     except Exception as e:
         return HTTPException(status_code=500, detail=str(e))
 
-
-# ************************************** Manage of Members *****************************************
 
 class Member_detail(BaseModel):
     username: str
