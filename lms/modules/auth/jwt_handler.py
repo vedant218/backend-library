@@ -38,11 +38,12 @@ async def get_current_user(token: str = Depends(oauth2_scheme)) -> dict[str, int
     try:
         payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
         user_id: int = payload.get("user_id")
+        user_name: str = payload.get("username")
         user_role: str = payload.get("role")
         if user_id is None:
             raise credentials_exception
     except JWTError:
         raise credentials_exception
-    return {"user_id":user_id, "user_role":user_role}
+    return {"user_id":user_id, "user_role":user_role, "user_name":user_name}
 
 # ****************************************************************************************************

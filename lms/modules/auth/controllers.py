@@ -45,11 +45,12 @@ def is_valid(username,password):
     
     if user:
         user_id = user[0]
+        user_name = user[1]
         hashed_password = user[2]
         role = user[3]
         is_password_valid = verify_password(password,hashed_password)
         if is_password_valid:
-            return {"response":True, "msg":"Successfully logged in...!", "user_id":user_id, "role":role}
+            return {"response":True, "msg":"Successfully logged in...!", "user_id":user_id, "username":user_name, "role":role}
         else:
             return {"response":False, "msg":"Please enter valid password...!"}
     return {"response":False, "msg":"Invalid username or password...!"}

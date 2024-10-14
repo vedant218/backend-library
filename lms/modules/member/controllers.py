@@ -1,6 +1,7 @@
 from fastapi.exceptions import HTTPException
 from modules.database import db
 from datetime import datetime
+from modules.auth.controllers import is_valid  
 
 
 async def borrow_book(current_user_id, book_id):
@@ -82,34 +83,39 @@ async def return_book(book_id):
         raise HTTPException(status_code=500, detail=str(e))
 
 async def delete_account(current_user_id):
+    cur = db.cursor()
     try:
-        cur = db.cursor()
-
         # Get user information before deletion
-        user = get_user(current_user_id)
+        user = is_valid(current_user_id)
         if not user:
             raise HTTPException(status_code=404, detail="User not found")
         
-        username = user[0]
+        user_id = user[1]
+        username = user[2]
 
-        # Add entry to activity log
-    # Add entry to activity log
+        # Start transaction
+        cur.execute("START TRANSACTION")
+
+        # Log the account deletion
         log_query = "INSERT INTO activity_log (user_id, username, action, created_at) VALUES (%s, %s, %s, %s)"
-        log_values = (member_id, username, "account deleted", datetime.now())
+        log_values = (user_id, username, "account deleted", datetime.now())
         cur.execute(log_query, log_values)
 
         # Delete user
         delete_query = "DELETE FROM users WHERE id=%s"
         cur.execute(delete_query, (current_user_id,))
 
+        # Commit the transaction
         db.commit()
-        cur.close()
         return {"message": "Your account has been successfully deleted"}
     except HTTPException as he:
+        db.rollback()
         raise he
     except Exception as e:
         db.rollback()
         raise HTTPException(status_code=500, detail=str(e))
+    finally:
+        cur.close()
 
 async def get_borrowed_books(user_id):
     try:
