@@ -22,6 +22,12 @@ class UserLogin(BaseModel):
     username: str
     password: str
 
+class Token(BaseModel):
+    access_token: str
+    token_type: str
+
+
+
 # For Index
 @router.get("/")
 async def index(current_user: dict = Depends(get_current_user)):
@@ -50,4 +56,12 @@ async def login(user_detail: UserLogin):
         return await auth_controllers.login(username,password)
     except Exception as e:
         return HTTPException(status_code=500, detail=str(e))
+
+@router.post("/token", response_model=Token)
+async def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends()):
+    user = auth_controllers.is_valid(form_data.username, form_data.password)
+    if not user:
+        raise HTTPException(status_code=401, detail="Incorrect username or password")
+    access_token = create_access_token(data={"sub": user.username, "role": user.role})
+    return {"access_token": access_token, "token_type": "bearer"}
 
